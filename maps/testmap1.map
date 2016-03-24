@@ -1,0 +1,167 @@
+Version 3
+// entity 0
+{
+"classname" "worldspawn"
+// primitive 0
+{
+ brushDef3
+ {
+  ( -1 0 0 -928 ) ( ( 0.0078125 0 0.375 ) ( 0 0.0078125 0 ) ) "textures/common_floors/c2_ceiling_2"
+  ( 0 1 0 -1192 ) ( ( 0.0078125 0 0.25 ) ( 0 0.0078125 0 ) ) "textures/common_floors/c2_ceiling_2"
+  ( 1 0 0 -1448 ) ( ( 0.0078125 0 -0.375 ) ( 0 0.0078125 0 ) ) "textures/common_floors/c2_ceiling_2"
+  ( 0 -1 0 -1000 ) ( ( 0.0078125 0 -0.25 ) ( 0 0.0078125 0 ) ) "textures/common_floors/c2_ceiling_2"
+  ( 0 0 1 -832 ) ( ( 0.0078125 0 -0.375 ) ( 0 0.0078125 -0.25 ) ) "textures/common_floors/c2_ceiling_2"
+  ( 0 0 -1 824 ) ( ( 0.0078125 0 -0.375 ) ( 0 0.0078125 0.25 ) ) "textures/common_floors/c2_ceiling_2"
+ }
+}
+// primitive 1
+{
+ brushDef3
+ {
+  ( 0 0 -1 0 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common_walls/ba_wall1_5d"
+  ( 0 0 1 -832 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common_walls/ba_wall1_5d"
+  ( 0 -1 0 -1048 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common_walls/ba_wall1_5d"
+  ( 1 0 0 -1432 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common_walls/ba_wall1_5d"
+  ( 0 1 0 -1144 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common_walls/ba_wall1_5d"
+  ( -1 0 0 1416 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common_walls/ba_wall1_5d"
+ }
+}
+// primitive 2
+{
+ brushDef3
+ {
+  ( 0.0000000655 0 1 -832 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common_walls/ba_wall1_5d"
+  ( 1 0 0 -1431.9990234375 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common_walls/ba_wall1_5d"
+  ( -0.0000000656 -0.0000076296 -1 0.0090337601 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common_walls/ba_wall1_5d"
+  ( -1 0 0 -959.998046875 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common_walls/ba_wall1_5d"
+  ( 0 1 0 -1159.9995117188 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common_walls/ba_wall1_5d"
+  ( 0 -1 0 1144 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common_walls/ba_wall1_5d"
+ }
+}
+// primitive 3
+{
+ brushDef3
+ {
+  ( 0.0000000874 0 1 -832.0000610352 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common_walls/ba_wall1_5d"
+  ( 1 0 0 -1431.9990234375 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common_walls/ba_wall1_5d"
+  ( -0.0000000874 -0.0000076296 -1 -0.0078300573 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common_walls/ba_wall1_5d"
+  ( -1 0 0 -959.998046875 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common_walls/ba_wall1_5d"
+  ( 0 1 0 1048.0004882813 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common_walls/ba_wall1_5d"
+  ( 0 -1 0 -1064 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common_walls/ba_wall1_5d"
+ }
+}
+// primitive 4
+{
+ brushDef3
+ {
+  ( 0 0 -1 0 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common_walls/ba_wall1_5d"
+  ( 0 0 1 -832 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common_walls/ba_wall1_5d"
+  ( 0 -1 0 -1048 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common_walls/ba_wall1_5d"
+  ( 1 0 0 960 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common_walls/ba_wall1_5d"
+  ( 0 1 0 -1144 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common_walls/ba_wall1_5d"
+  ( -1 0 0 -976 ) ( ( 0.0078125 0 0 ) ( 0 0.0078125 0 ) ) "textures/common_walls/ba_wall1_5d"
+ }
+}
+// primitive 5
+{
+ brushDef3
+ {
+  ( -1 0 0 -960 ) ( ( 0.015625 0 0 ) ( 0 0.015625 0 ) ) "textures/common_floors/c_p4_floor_1"
+  ( 0 1 0 -1144 ) ( ( 0.015625 0 0 ) ( 0 0.015625 0 ) ) "textures/common_floors/c_p4_floor_1"
+  ( 1 0 0 -1416 ) ( ( 0.015625 0 0 ) ( 0 0.015625 0 ) ) "textures/common_floors/c_p4_floor_1"
+  ( 0 -1 0 -1048 ) ( ( 0.015625 0 0 ) ( 0 0.015625 0 ) ) "textures/common_floors/c_p4_floor_1"
+  ( 0 0 1 -8 ) ( ( 0.015625 0 0 ) ( 0 0.015625 0 ) ) "textures/common_floors/c_p4_floor_1"
+  ( 0 0 -1 0 ) ( ( 0.015625 0 0 ) ( 0 0.015625 0 ) ) "textures/common_floors/c_p4_floor_1"
+ }
+}
+}
+// entity 1
+{
+"classname" "weapon_nailgun"
+"name" "weapon_nailgun_2"
+"origin" "-352 -456 0"
+}
+// entity 2
+{
+"classname" "weapon_grenadelauncher"
+"name" "weapon_grenadelauncher_1"
+"origin" "-400 -616 0"
+}
+// entity 3
+{
+"classname" "weapon_rocketlauncher"
+"name" "weapon_rocketlauncher_1"
+"origin" "-320 -536 8"
+}
+// entity 4
+{
+"classname" "weapon_shotgun"
+"name" "weapon_shotgun_1"
+"origin" "-368 -464 16"
+}
+// entity 5
+{
+"classname" "weapon_hyperblaster"
+"name" "weapon_hyperblaster_1"
+"origin" "-384 -480 16"
+}
+// entity 6
+{
+"classname" "weapon_nailgun"
+"name" "weapon_nailgun_1"
+"origin" "-448 -344 16"
+}
+// entity 7
+{
+"classname" "weapon_machinegun"
+"name" "weapon_machinegun_3"
+"origin" "-328 -584 8"
+}
+// entity 8
+{
+"classname" "light"
+"name" "light_2"
+"origin" "40 8 304"
+"light_radius" "1000 1000 1000"
+}
+// entity 9
+{
+"classname" "target_null"
+"name" "target_null_2"
+"origin" "-32 -344 8"
+"call" "Waves"
+}
+// entity 10
+{
+"classname" "info_player_start"
+"name" "info_player_start_1"
+"origin" "-408 -552 16"
+}
+// entity 11
+{
+"classname" "light"
+"name" "light_3"
+"origin" "-680 784 304"
+"light_radius" "8 8 8"
+}
+// entity 12
+{
+"classname" "light"
+"name" "light_4"
+"origin" "1008 856 304"
+"light_radius" "8 8 8"
+}
+// entity 13
+{
+"classname" "light"
+"name" "light_5"
+"origin" "1096 -768 304"
+"light_radius" "8 8 8"
+}
+// entity 14
+{
+"classname" "light"
+"name" "light_6"
+"origin" "-608 -728 304"
+"light_radius" "8 8 8"
+}
