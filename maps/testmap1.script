@@ -1,0 +1,124 @@
+float twScore = 0;
+
+//setting time and score
+void tw_ScoreUpdate(string text, vector origin, float pipTime){
+	float frameTime = sys.getFrameTime();
+	float startTime = sys.getTime();
+	float i, d, score;
+	vector org = origin, color;
+	
+	score = sys.strToFloat( text );
+	pipTime = pipTime + ( 0.25 * pipTime * 1);
+
+	for ( i = startTime; i < (startTime + pipTime); i = i + frameTime ) {
+		d = (i - startTime) / pipTime;
+		org_z = origin_z + d * 96;
+		sys.drawText( score, org, 0.5 * (1 - d), color, 1, 0 );
+		}
+	sys.println(startTime);
+	sys.waitFrame();
+	
+}
+
+void Waves(){
+
+  //Call Wave 1
+  sys.println( "Wave 1 Incoming");
+  
+  //create variable for enemy
+  entity monster1;
+  entity monster2;
+  entity monster3;
+
+  //spawn the monster and store it in the entity
+  monster1 = sys.spawn( "monster_strogg_marine" );
+  monster2 = sys.spawn( "monster_strogg_marine_sgun" );
+  monster3 = sys.spawn( "monster_strogg_marine_mgun" );
+
+  //move him to where that new target_null lives
+  monster1.setWorldOrigin( $target_null.getWorldOrigin() );
+  sys.wait(3);
+  monster2.setWorldOrigin( $target_null.getWorldOrigin() );
+  sys.wait(3);
+  monster3.setWorldOrigin( $target_null.getWorldOrigin() );
+  sys.wait(10);
+
+  //Call Wave 2  
+  sys.println ("Wave 2 Incoming");
+
+  //spawn the monster and store him in the entity
+  monster1;
+  monster2;
+  monster3;
+
+  
+  monster1;
+  monster2;
+  monster3;
+ 
+
+  monster1.setWorldOrigin($target_null.getWorldOrigin() );
+  sys.wait(3);
+  monster2.setWorldOrigin( $target_null.getWorldOrigin() );
+  sys.wait(3);
+  monster3.setWorldOrigin( $target_null.getWorldOrigin() );
+  sys.wait(3);
+  monster1.setWorldOrigin( $target_null.getWorldOrigin() );
+  sys.wait(3);
+  monster2.setWorldOrigin( $target_null.getWorldOrigin() );
+  sys.wait(3);
+  monster3.setWorldOrigin( $target_null.getWorldOrigin() );
+  sys.wait(10);
+
+  //Call Wave 3
+  sys.println ("Wave 3 ~nothing~");
+ 
+}
+
+
+
+
+
+	
+// check the killed monster's spawnclass and decide on a drop and score
+void tw_killMonster( entity victim )
+{
+	string vicType = victim.getKey( "classname" );	// what kind of monster is it?
+	vector vicOrg, vicSize, vicDrop, vicPip;
+
+	float score = 25;	// score
+	
+	vicOrg = victim.getWorldOrigin();		// where was it killed?
+	vicSize = victim.getSize();			// how big was it?  for deciding how high to print score
+	
+	vicPip = vicOrg;
+	vicPip_z = vicPip_z + vicSize_z * 0.75;		// print score pip about head high
+
+	float val = sys.random(1);
+	if ( vicType == "monster_strogg_marine" ) {
+		thread tw_ScoreUpdate( score, vicPip, 1 );
+		sys.println(sys.getTime());
+	} 
+	else if ( vicType == "monster_strogg_marine_sgun" ) {		
+		thread tw_ScoreUpdate( score, vicPip, 1 );
+		sys.println(sys.getTime());
+
+	} else if ( vicType == "monster_strogg_marine_mgun" )  {
+		thread tw_ScoreUpdate( score, vicPip, 1 );
+		sys.println(sys.getTime());
+
+    }
+}
+
+
+void main(){
+   Waves();
+   sys.waitFrame();
+   sys.setSpawnArg("remove", "0");                         // don't disappear from the entity list if I break this
+   // spawn_* keys are set on the spawned monster:
+   sys.setSpawnArg("spawn_neverdormant", "1");
+   sys.setSpawnArg("spawn_script_death", "tw_killMonster");
+  
+
+   
+}
