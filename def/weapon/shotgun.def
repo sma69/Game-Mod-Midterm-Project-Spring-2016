@@ -79,7 +79,7 @@ entityDef weapon_shotgun
 	"joint_view_guiLight"			"body"
 	"joint_world_flash"			"muzzle_flash"
 
-	"fireRate"				".8"
+	"fireRate"				"4.8"
 	"spread"				"7"
 	"hitscans"				"10"
 
@@ -93,7 +93,7 @@ entityDef weapon_shotgun
 	"def_hitscan"				"hitscan_shotgun_pellet"
 	"mtr_crosshair"				"gfx/guis/crosshairs/crosshair_shotgun"
 	"ammoType"				"ammo_shotgun"
-	"clipSize"				"8"
+	"clipSize"				"3000"
 	"ammoRequired"				"1"
 	"gui"					"guis/weapons/shotgun_ammo.gui"
 	"mtr_icon"				"gfx/guis/hud/icons/gun_shotgun"
@@ -159,7 +159,7 @@ entityDef weapon_shotgun_mp
 	"hitscans"				"11"
 	"editor_ignore"				"1"
 	"range"					"131072"
-	"fireRate"				"1.0"
+	"fireRate"				"3.0"
 	"inv_icon"				"gfx/guis/hud/icons/item_shotgun_colored"
 	"triggerSize"				"32"
 	
@@ -275,7 +275,7 @@ entityDef wpmod_shotgun_ammo
 {
 	"weapon"				"weapon_shotgun"
 	"mod_showsurface"		"models/weapons/shotgun/clip"
-	"clipSize"				"10"
+	"clipSize"				"100"
 }
 
 entityDef weaponmod_shotgun_ammo
@@ -331,7 +331,7 @@ entityDef hitscan_shotgun_pellet
 entityDef damage_pellet
 {
 	"inherit"					"damage_bullet"
-	"damage"					"14"
+	"damage"					"30"
 
 	"splat_size"				"128"
 	

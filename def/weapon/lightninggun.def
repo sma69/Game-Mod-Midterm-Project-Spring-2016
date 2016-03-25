@@ -285,7 +285,7 @@ entityDef hitscan_lightninggun_mp
 entityDef damage_lightninggun
 {
 	"damage"					"20"
-//	"knockback"					"100"
+//	"knockback"					"200"
 	"gib"						"1"
 
 	"filter_electricity"		"1"						// can damage all entities with their damage_filter set to "electricity"
@@ -308,7 +308,7 @@ entityDef damage_lightninggun_mp
 {
 	"inherit"					"damage_lightninggun"
 	"damage"					"8"
-	"knockback"					"8"
+	"knockback"					"200"
 }
 
 

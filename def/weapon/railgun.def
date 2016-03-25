@@ -370,7 +370,7 @@ entityDef hitscan_railgun
 entityDef hitscan_railgun_mp
 {
 	// stupid inherit doesn't work here?
-	"range"						"40000"
+	"range"						"20000"
 
 	"push"						"40000"
 	
@@ -425,7 +425,7 @@ entityDef hitscan_railgun_penetrate
 
 entityDef damage_railgun 
 {
-	"damage"					"300"
+	"damage"					"500"
 	"push"						"10"
 	"knockback"					"10"
 	"gib"						"1"
